@@ -705,14 +705,14 @@ BoldItalicFont=*-MediumItalic,
 % Usage: \makelettertitle
 \newcommand*{\makelettertitle}{%
 	\vspace{8.4mm}
-	\setlength\tabcolsep{0pt}
-	\setlength{\extrarowheight}{0pt}
-	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-		\recipienttitlestyle{\@recipientname} & \letterdatestyle{\@letterdate}
-	\end{tabular*}
-	\begin{singlespace}
-		\recipientaddressstyle{\@recipientaddress} \\\\
-	\end{singlespace}
+%	\setlength\tabcolsep{0pt}
+%	\setlength{\extrarowheight}{0pt}
+%	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+%		\recipienttitlestyle{\@recipientname} & \letterdatestyle{\@letterdate}
+%	\end{tabular*}
+%	\begin{singlespace}
+%		\recipientaddressstyle{\@recipientaddress} \\\\
+%	\end{singlespace}
 	\ifthenelse{\isundefined{\@lettertitle}}
 	{}
 	{\lettertitlestyle{\@lettertitle} \\}
@@ -723,7 +723,7 @@ BoldItalicFont=*-MediumItalic,
 % Usage: \makeletterclosing
 \newcommand*{\makeletterclosing}{%
 	\vspace{3.4mm}
-	\lettertextstyle{\@letterclosing} \\\\
+	\lettertextstyle{\@letterclosing} \\
 	\letternamestyle{\@firstname\ \@lastname}
 	\ifthenelse{\isundefined{\@letterenclosure}}
 	{\\}
