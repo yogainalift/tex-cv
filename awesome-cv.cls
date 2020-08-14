@@ -455,7 +455,7 @@ BoldItalicFont=*-MediumItalic,
 		\headersocialstyle{%
 			\newbool{isstart}%
 			\setbool{isstart}{true}%
-			\ifthenelse{\isundefined{\@mobile}}%
+			\ifthenelse{\isundefined{tel:\@mobile}}%
 			{}%
 			{%
 				\faMobile\acvHeaderIconSep\@mobile%
